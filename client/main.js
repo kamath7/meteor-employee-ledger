@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import EmployeeList from './components/employee-list'
 //On meteor loadup render app to DOM
 
 const App = () => {
   return (
     <div>
-      <h1>Hello Kams</h1>
+      <EmployeeList/>
     </div>
   );
 };

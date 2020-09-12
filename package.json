@@ -1,0 +1,16 @@
+{
+  "name": "employee-ledger",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.10.4",
+    "faker": "^5.1.0",
+    "jquery": "^3.5.1",
+    "lodash": "^4.17.20",
+    "meteor-node-stubs": "^1.0.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

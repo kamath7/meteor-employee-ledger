@@ -9,7 +9,6 @@ Meteor.startup(() => {
   //Generating Fake data - faker
 
   const numberRecords = Employees.find({}).count();
-  console.log(numberRecords);
   if (!numberRecords) {
     //Generating fake data here if there are no records found
     _.times(5000, () => {
@@ -23,7 +22,7 @@ Meteor.startup(() => {
     }); //alternative to for loop using Lodash
   }
 
-  Meteor.publish('employees',function(){
-      return Employees.find({},{limit:20}) //limitng it to 20 records
-  }) //to not show all the 5000 records at once
+  Meteor.publish("employees", function (per_page) {
+    return Employees.find({}, { limit: per_page }); //limitng it to per_page records
+  }); //to not show all the 5000 records at once
 });
